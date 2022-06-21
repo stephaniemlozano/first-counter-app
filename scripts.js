@@ -18,8 +18,8 @@ function decrease() {
 
 function reset() {
     console.log('reset button')
-    count == 0
-    counterEl.innerHTML = 0
+    count = 0
+    counterEl.innerHTML = count
 }
 
 
@@ -29,5 +29,11 @@ function printTotal() {
     totalCount.innerHTML += countStr
 }
 
-//add sum total
+
 //cannot drop below zero
+// if (decrease() < 0) {
+//     count -= 1
+//     counterEl.innerHTML = count
+// } else {
+    
+// }
