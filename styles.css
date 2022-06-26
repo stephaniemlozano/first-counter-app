@@ -1,28 +1,36 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
-    background: rgb(254, 254, 254);
-    background: linear-gradient(300deg, rgb(254, 254, 254) 0%, rgba(250, 165, 0, 1) 100%);
+    color: gray;
+    background: #ff8989;
+    background: linear-gradient(300deg, #a9ff68 0%, #ff8989 100%);
   
     background-repeat: no-repeat;
     height: 100vh;
     text-align: center;
   }
   main {
-    border: solid 1px gray;
-    border-radius: 5px;
+    border: solid 2px gray;
+    border-radius: 10px;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   }
   
   main > button {
-    background-color: #fbc55b;
+    background-color: #CDF5B8;
     width: 10rem;
     border: solid 1px gray;
     border-radius: 5px;
-    color: black;
+    color: gray;
     width: 300px;
     margin: 20px;
     text-transform: uppercase;
@@ -32,11 +40,15 @@ body {
   }
   
   main > button:hover {
-    background-color: rgb(205, 205, 205);
+    background-color: #FBB49D;
     opacity: 0.6;
   }
-  
+
   #counter {
     font-size: 10rem;
     margin: 1rem;
+  }
+
+  #total {
+    padding-bottom: 20px;
   }
